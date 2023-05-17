@@ -1,0 +1,150 @@
+:root {
+  --primary-100: hsl(225, 100%, 94%);
+  --primary-200: hsl(245, 75%, 52%);
+
+  --neutral-100: hsl(228, 100%, 98%);
+  --neutral-200: hsl(224, 23%, 55%);
+  --neutral-300: hsl(223, 47%, 23%);
+
+  --fw-regular: 500;
+  --fw-bold: 700;
+  --fw-xBold: 900;
+
+  --ff-base: 'Red Hat Display', sans-serif;
+
+  --box-shadow:  2px 12px 20px 0px rgba(114,128,167,0.3);
+}
+  body {
+    background: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    margin-inline: auto;
+    font-size: 1rem;
+    width: 327px;
+    color: var(--neutral-200);
+    background-color: var(--primary-100);
+  }
+  
+  main {
+    font-family: var(--ff-base);
+    background-color: var(--neutral-100);
+    border-radius: 1.2rem;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--box-shadow);
+    -moz-box-shadow: var(--box-shadow);
+  }
+  
+  section {
+    text-align: center;
+  }
+  
+  h1 {
+    font-weight: var(--fw-xBold);
+    color: var(--neutral-300);
+  }
+  
+  .hero {
+    padding: 1.95rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: white;
+  }
+  
+  button {
+    display: block;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  h3 {
+    display: block;
+    font-size: 1rem;
+    color: var(--neutral-300);
+    font-weight: var(--fw-xBold);
+  }
+  
+  p {
+    padding: 1rem 1px 0;
+  }
+  
+  a{
+    font-size: 0.8rem;
+    font-weight: var(--fw-xBold);
+    color: var(--primary-200);
+  }
+  
+  h4 {
+    font-weight: var(--fw-regular);
+    font-size: 1rem;
+  }
+  
+  .plan__details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 1rem;
+    background-color: var(--neutral-100);
+    border-radius: 0.6rem;
+  }
+  
+  .selected__plan {
+    display: flex;
+  }
+  
+  .selected__plan::before{
+   content: url(./images/icon-music.svg);
+   padding-right: 1.25rem;
+  }
+  
+  .action__buttons{
+    display: flex;
+    gap: 1.12rem;
+    flex-direction: column;
+  }
+  
+  .payment {
+    font-weight: var(--fw-bold);
+    background-color: var(--primary-200);
+    color: var(--neutral-100);
+    padding: 0.8rem 0;
+    border-radius: 0.6rem;
+  
+    box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--box-shadow);
+    -moz-box-shadow: var(--box-shadow);
+  }
+  
+  .cancel {
+    font-weight: var(--fw-xBold);
+    color: var(--neutral-200);
+  }
+
+@media (min-width: 768px) {
+  body {
+    background: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: var(--primary-100);
+    width: 450px;
+  }
+  .hero {
+    padding: 1.95rem 2.25rem;
+  }
+  p {
+    padding: 1rem 10px 0;
+  }
+}
+
+.payment:hover {
+  background-color: var(--neutral-200);
+}
+
+.cancel:hover{
+  color: var(--neutral-300);
+}
+
+a:hover {
+  color: var(--neutral-200);
+  text-decoration: none;  
+}
