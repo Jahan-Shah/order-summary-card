@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Repository](https://github.com/Jahan-Shah/order-summary-card)
-- Live Site URL: [Netlify](https://order-summary-component.netlify.app/)
+- Live Site URL: [Netlify](https://order-summary-card1.netlify.app/)
 
 ## My process
 
