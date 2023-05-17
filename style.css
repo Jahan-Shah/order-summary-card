@@ -22,6 +22,8 @@
     width: 327px;
     color: var(--neutral-200);
     background-color: var(--primary-100);
+    display: flex;
+    align-items: center;
   }
   
   main {
